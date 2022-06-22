@@ -1,0 +1,181 @@
+body {
+  background: rgba(19, 26, 35, 1);
+}
+
+header {
+  background-color: rgba(24, 34, 46, 1);
+  background-image: url("/img/faq-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+}
+
+.roadmap {
+  color: #6fbf86 !important;
+}
+
+.hero h1 {
+  color: #6fbf86;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 15rem;
+}
+
+.timeline-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+
+.timeline {
+  position: relative;
+  padding: 5rem;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 16px;
+  backdrop-filter: blur(80px);
+  margin-top: -8rem;
+  background-color: rgba(24, 34, 46, 0.2);
+}
+
+.timeline ul {
+  list-style: none;
+}
+
+.timeline ul li {
+  padding: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+  position: relative;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 1px;
+  left: 12%;
+  top: 10%;
+  transform: translateX(-50%);
+}
+
+.timeline ul li::after {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 20px;
+  background-image: url("/img/roadmap-polygon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  top: 35%;
+  left: -31px;
+}
+
+.timeline h1 {
+  margin-left: 1.2rem;
+  font-weight: 700;
+  font-size: 24px;
+  color: #6fbf86;
+}
+
+.main-timeline-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.timeline-content p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+@media (max-width: 1100px) {
+  .main-timeline-container {
+    grid-template-columns: 1fr;
+    gap: 200px;
+  }
+}
+
+@media (max-width: 850px) {
+  .timelines {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 70vh;
+    background-image: url("/img/faq-bg.png");
+  }
+
+  .hero h1 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .main-timeline-container {
+    margin-top: -28vh;
+  }
+
+  .timeline {
+    padding: 2rem;
+  }
+
+  .timeline::before {
+    left: 5%;
+  }
+
+  .timeline ul li::after {
+    left: -4%;
+  }
+
+  .timeline-container {
+    padding-bottom: 2rem;
+  }
+
+  .timelines {
+    grid-template-columns: 1fr;
+    background-image: url("/img/roadmap-blur.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 375px) {
+    .timeline ul li::after {
+        left: -9%;
+      }
+}
+
+@media (max-width: 420px) {
+    .timeline ul li::after {
+        left: -9%;
+      }
+}
+
+@media (max-width: 412px) {
+    .timeline ul li::after {
+        left: -8%;
+      }
+}
+
+@media (max-width: 365px) {
+    .timeline ul li::after {
+        left: -10%;
+      }
+}
+
+@media (max-width: 280px) {
+    .timeline ul li::after {
+        left: -16%;
+      }
+}
