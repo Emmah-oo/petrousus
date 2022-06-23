@@ -4,10 +4,9 @@ body {
 
 header {
   background-color: rgba(24, 34, 46, 1);
-  background-image: url("/img/faq-bg.png");
+  background-image: url("/img/section-hero.png");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center; */
 }
 
 .roadmap {
@@ -93,9 +92,9 @@ header {
 }
 
 .timeline-content p {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
 }
 
 @media (max-width: 1100px) {
@@ -151,31 +150,31 @@ header {
 }
 
 @media (max-width: 375px) {
-    .timeline ul li::after {
-        left: -9%;
-      }
+  .timeline ul li::after {
+    left: -9%;
+  }
 }
 
 @media (max-width: 420px) {
-    .timeline ul li::after {
-        left: -9%;
-      }
+  .timeline ul li::after {
+    left: -9%;
+  }
 }
 
 @media (max-width: 412px) {
-    .timeline ul li::after {
-        left: -8%;
-      }
+  .timeline ul li::after {
+    left: -8%;
+  }
 }
 
 @media (max-width: 365px) {
-    .timeline ul li::after {
-        left: -10%;
-      }
+  .timeline ul li::after {
+    left: -10%;
+  }
 }
 
 @media (max-width: 280px) {
-    .timeline ul li::after {
-        left: -16%;
-      }
+  .timeline ul li::after {
+    left: -16%;
+  }
 }

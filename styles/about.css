@@ -3,11 +3,10 @@ body {
 }
 
 header {
-    /* background-image: url("/img/roadmap-bg2.png"); */
     background-image: url("/img/section-hero.png");
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center; */
+    background-position: right;
     background-color: rgba(24, 34, 46, 1);
 }
 
@@ -81,6 +80,13 @@ header {
 
 .businesses img {
     width: 100%;
+}
+
+@media (max-width: 1000px) {
+    header {
+        background-image: url("/img/faq-bg.png");
+        background-position: inherit;
+    }
 }
 
 @media (max-width: 800px) {

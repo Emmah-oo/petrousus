@@ -183,7 +183,6 @@ footer .socials {
 
 .copyright {
   padding: 1rem 0;
-  /* background-color: #131A23CC; */
   background: #131a23cc;
   color: #fff;
   background-position: center;
@@ -205,6 +204,14 @@ span {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+footer .socials .social img {
+  width: 50%;
+}
+
+.facebook {
+  width: 50% !important;
 }
 
 @media (max-width: 800px) {
