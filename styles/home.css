@@ -240,7 +240,6 @@ button {
 .percentage,
 .ticker {
   border-right: 1px solid #fff;
-  /* padding-right: 4rem; */
 }
 
 .supply,
@@ -414,10 +413,6 @@ body {
     margin-bottom: 1rem;
   }
 
-  /* .countdown {
-    gap: 30px;
-  } */
-  /* issue in coutdown */
   .colon {
     width: 10px;
   }
@@ -427,7 +422,6 @@ body {
   header {
     background-image: url("/img/header-mobile-bg.png");
     background-position: bottom;
-    /* height: 100vh; */
   }
 
   .hero .hero-text {
@@ -534,10 +528,6 @@ body {
   .table {
     order: 1;
   }
-
-  /* .presale {
-    background-image: url(/img/presale-bg-mobile.png);
-  } */
 }
 
 @media (max-width: 500px) {
@@ -584,9 +574,7 @@ body {
   .hero-cta .btn {
     width: 100px;
     height: 40px;
-  } 
-
-  
+  }
 
   .time h1 {
     font-size: 15px;
@@ -595,5 +583,4 @@ body {
   .time p {
     font-size: 10px;
   }
-
 }

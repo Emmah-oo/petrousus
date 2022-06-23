@@ -1,149 +1,147 @@
 body {
-    background: #131A23;
+  background: #131a23;
 }
 
 header {
-    background-image: url("/img/section-hero.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    background-color: rgba(24, 34, 46, 1);
+  background-image: url("/img/section-hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-color: rgba(24, 34, 46, 1);
 }
 
 .hero {
-    padding-top: 10rem;
-    padding-bottom: 20rem;
+  padding-top: 10rem;
+  padding-bottom: 20rem;
 }
 
 .hero .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
 }
 
 .hero-img {
-    justify-self: flex-end;
+  justify-self: flex-end;
 }
 
 .hero-text h1 {
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: #6FBF86;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #6fbf86;
 }
 
 .hero-text p {
-    color: #fff;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
 }
 
 .overflow-description {
-    padding: 4rem 0;
+  padding: 4rem 0;
 }
 
 .overflow-img {
-    width: 100%;
-    margin-top: -19rem;
+  width: 100%;
+  margin-top: -19rem;
 }
 
 .overflow-img img {
-    width: 100%;
+  width: 100%;
 }
 
 .businesses {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: -2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -2rem;
 }
 
 .mobile {
-    display: none;
+  display: none;
 }
 
 .businesses h1 {
-    margin-bottom: 2rem;
-    font-weight: 700;
-    font-size: 48px;
-    text-align: center;
-    color: #6FBF86;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  color: #6fbf86;
 }
 
 .businesses .bsc {
-    width: 30%;
-    margin-bottom: 3rem;
+  width: 30%;
+  margin-bottom: 3rem;
 }
 
 .businesses img {
-    width: 100%;
+  width: 100%;
 }
 
 @media (max-width: 1000px) {
-    header {
-        background-image: url("/img/faq-bg.png");
-        background-position: inherit;
-    }
+  header {
+    background-image: url("/img/faq-bg.png");
+    background-position: inherit;
+  }
 }
 
 @media (max-width: 800px) {
-    .overflow-img {
-        margin-top: -15rem;
-    }
+  .overflow-img {
+    margin-top: -15rem;
+  }
 }
 
 @media (max-width: 700px) {
-   .hero {
+  .hero {
     padding-bottom: 8rem;
     padding-top: 4rem;
-   }
+  }
 
-   .hero .grid {
+  .hero .grid {
     grid-template-columns: 1fr;
-   }
+  }
 
-   .hero-text h1 {
+  .hero-text h1 {
     text-align: center;
-   }
+  }
 
-   .overflow-img {
+  .overflow-img {
     margin-top: -12rem;
-    }   
+  }
 
-    .businesses h1 {
-        font-size: 24px;
-    }
+  .businesses h1 {
+    font-size: 24px;
+  }
 
-    .businesses .bsc {
-        width: 30%;
-    }
-
-   
+  .businesses .bsc {
+    width: 30%;
+  }
 }
 
 @media (max-width: 500px) {
-    .hero h1 {
-        font-size: 25px;
-    }
+  .hero h1 {
+    font-size: 25px;
+  }
 
-    .hero p {
-        font-size:15px;
-    }
+  .hero p {
+    font-size: 15px;
+  }
 
-    .desktop {
-        display: none;
-    }
+  .desktop {
+    display: none;
+  }
 
-    .mobile {
-        display: block;
-    }
+  .mobile {
+    display: block;
+  }
 }
 
 @media (max-width: 300px) {
-    .overflow-description {
-        padding: 7rem 0;
-    }
+  .overflow-description {
+    padding: 7rem 0;
+  }
 }
