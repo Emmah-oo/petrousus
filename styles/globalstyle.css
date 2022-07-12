@@ -219,9 +219,12 @@ footer .socials .social img {
     position: fixed;
     height: 100%;
     background-color: #131a23;
+    background-image: url("/img/nav-blur.png");
+    background-position: center;
+    background-size: cover;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     top: 0;
     left: 0;
     width: 100%;
@@ -231,7 +234,7 @@ footer .socials .social img {
 
   .nav-links .ctas {
     display: flex;
-    align-items: self-start;
+    align-items: center;
     width: 100%;
     justify-content: center;
     flex-direction: column;
@@ -247,6 +250,12 @@ footer .socials .social img {
 
   .logo {
     z-index: 1;
+  }
+
+  .ctas .language {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
   }
 
   .ctas .language,

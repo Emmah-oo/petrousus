@@ -397,6 +397,41 @@ body {
   display: none;
 }
 
+.tokens img {
+  width: 100%;
+}
+
+.token-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.token-container h5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFFFFF;
+  opacity: 60%;
+}
+
+.token-container .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #6CB47B;
+  border: 0;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px 20px;
+  gap: 5px;
+}
+
+.offer-2 {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .countdown .time {
     padding: 0.5rem 1rem;
@@ -433,6 +468,10 @@ body {
 
   .hero-img {
     display: none;
+  }
+
+  .tokens {
+    padding-top: 4rem;
   }
 
   .token {
@@ -528,6 +567,16 @@ body {
   .table {
     order: 1;
   }
+
+  .offer-1 {
+    display: none;
+  }
+
+  .offer-2 {
+    display: block;
+    width: 70% !important;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 500px) {
@@ -563,6 +612,14 @@ body {
 
   .hero-cta .btn a {
     font-size: 12px;
+  }
+
+  .presale {
+    background-size: contain;
+  }
+
+  .offer-2 {
+    width: 100% !important;
   }
 }
 
