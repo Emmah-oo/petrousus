@@ -25,45 +25,21 @@
             <img src="img/logo.png" alt="Petrousus" />
           </a>
         </div>
-
         <ul class="nav-links">
-          <li><a href="index.html" class="home">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="roadmap.html" class="roadmap">Roadmap</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <div class="ctas">
             <button class="btn">
-              <a href="">Enter Presale</a>
+              <a href="http://connect.petrousus.io/">Enter Presale</a>
             </button>
             <div class="language">
               <img src="img/language.svg" alt="Globe" />
-              <select name="select" id="select">
-                <option value="eng">English</option>
-                <option value="esp">Spanish</option>
-                <option value="ita">Italian</option>
-                <option value="ger">German</option>
-                <option value="frn">French</option>
-              </select>
+              <div id="google_translate_element"></div>
             </div>
           </div>
         </ul>
-
-        <div class="ctas hide">
-          <button class="btn">
-            <a href="">Enter Presale</a>
-          </button>
-          <div class="language">
-            <img src="img/language.svg" alt="Globe" />
-            <select name="select" id="select">
-              <option value="eng">English</option>
-              <option value="esp">Spanish</option>
-              <option value="ita">Italian</option>
-              <option value="ger">German</option>
-              <option value="frn">French</option>
-            </select>
-          </div>
-        </div>
-
         <div class="burger">
           <div class="line-1 line"></div>
           <div class="line-2 line"></div>
@@ -202,6 +178,16 @@
         <p>© Copyright by <span>Petrousus</span> All rights reserved.</p>
       </div>
     </div>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                includedLanguages: 'tr,de,fr,es,en,it',
+                layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+            }, 'google_translate_element');
+        }
+    </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-234197699-10"></script>

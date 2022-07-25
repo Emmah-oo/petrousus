@@ -37,7 +37,7 @@ li {
 
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 1rem 1rem;
   position: fixed;
@@ -51,6 +51,8 @@ nav {
 nav .nav-links {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 70%;
 }
 
 nav .nav-links li {
@@ -63,14 +65,6 @@ nav .nav-links li a {
   text-decoration: none;
 }
 
-.nav-links .ctas {
-  display: none;
-}
-
-.logo {
-  margin-right: auto;
-}
-
 nav .ctas {
   display: flex;
   align-items: center;
@@ -81,6 +75,12 @@ nav .ctas {
 .ctas .language {
   display: flex;
   align-items: center;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+option {
+  background-color: #131a23;
 }
 
 .ctas .btn {
@@ -101,17 +101,29 @@ nav .ctas {
   margin-right: 0.4rem;
 }
 
-#select {
+.goog-te-gadget .goog-te-combo  {
   border: 0;
   outline: 0;
   background-color: transparent;
   color: #fff;
   cursor: pointer;
 }
-
-option {
-  color: #000;
+.goog-logo-link {
+  display:none !important;
+} 
+  
+.goog-te-gadget{
+  color: transparent !important;
 }
+
+#google_translate_element{display:block}
+.goog-te-banner-frame.skiptranslate { display: none !important;} 
+body { top: 0px !important; }
+#goog-gt-tt{display: none !important; top: 0px !important; } 
+.goog-tooltip skiptranslate{display: none !important; top: 0px !important; } 
+.activity-root { display: hide !important;} 
+.status-message { display: hide !important;}
+.started-activity-container { display: hide !important;}
 
 .burger {
   cursor: pointer;
@@ -214,6 +226,18 @@ footer .socials .social img {
   width: 50% !important;
 }
 
+@media (max-width: 1000px) {
+  nav .nav-links {
+    width: 75%;
+  }
+}
+
+@media (max-width: 850px) {
+  nav .nav-links {
+    width: 80%;
+  }
+}
+
 @media (max-width: 800px) {
   .nav-links {
     position: fixed;
@@ -227,7 +251,7 @@ footer .socials .social img {
     align-items: center;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100% !important;
     transform: translateX(100%);
     transition: 300ms linear;
   }

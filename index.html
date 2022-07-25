@@ -45,37 +45,14 @@
           <li><a href="faq.html">FAQ</a></li>
           <div class="ctas">
             <button class="btn">
-              <a href="">Enter Presale</a>
+              <a href="http://connect.petrousus.io/">Enter Presale</a>
             </button>
             <div class="language">
               <img src="img/language.svg" alt="Globe" />
-              <select name="select" id="select">
-                <option value="eng">English</option>
-                <option value="esp">Spanish</option>
-                <option value="ita">Italian</option>
-                <option value="ger">German</option>
-                <option value="frn">French</option>
-              </select>
+              <div id="google_translate_element"></div>
             </div>
           </div>
         </ul>
-
-        <div class="ctas hide">
-          <button class="btn">
-            <a href="">Enter Presale</a>
-          </button>
-          <div class="language">
-            <img src="img/language.svg" alt="Globe" />
-            <select name="select" id="select">
-              <option value="eng">English</option>
-              <option value="esp">Spanish</option>
-              <option value="ita">Italian</option>
-              <option value="ger">German</option>
-              <option value="frn">French</option>
-            </select>
-          </div>
-        </div>
-
         <div class="burger">
           <div class="line-1 line"></div>
           <div class="line-2 line"></div>
@@ -91,7 +68,7 @@
               alt="petrousus-token"
               class="token"
             />
-            <img src="img/hero-text.svg" alt="Fast Reliable Defi Platform" />
+            <h1 class="title">Fast. <br> Reliable. <br> DeFi Platform</h1>
             <div class="hero-cta">
               <button class="btn">
                 <a href="">Whitepaper</a>
@@ -141,7 +118,8 @@
             <img src="img/mobilebx-2.png" alt="" class="bx-2" />
           </div>
           <div class="pie-chart">
-            <img src="img/tokenomics-chart.png" alt="" />
+            <img src="img/tokenomics-chart.png" alt="" class="dk-chart"/>
+            <img src="img/mb-chart.png" alt="" class="mb-chart"/>
           </div>
         </div>
         <div class="token">
@@ -174,7 +152,7 @@
           </div>
           <div class="ticker">
             <h1>Ticker</h1>
-            <p>SUS</p>
+            <p>PSUS</p>
           </div>
           <div class="start-price">
             <h1>Start Price</h1>
@@ -279,8 +257,12 @@
       </div>
       <section class="tokens">
         <div class="container">
-          <img src="img/offer.png" alt="" class="offer-1">
-          <img src="img/offer-mb.png" alt="" class="offer-2">
+          <div class="bonus">
+            <h1>Sign up and buy Petrousus tokens within 10 minutes and receive a 25% bonus!</h1>
+            <img src="img/bonus-offer.png" alt="" class="bonus-offer">
+            <img src="img/coin-lg.png" alt="" class="coin-lg">
+            <img src="img/coin-sm.png" alt="" class="coin-sm">
+          </div>
         </div>
         <div class="token-container">
           <h5>Buy Token on</h5>
@@ -337,6 +319,15 @@
       </div>
     </div>
 
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                includedLanguages: 'tr,de,fr,es,en,it',
+                layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+            }, 'google_translate_element');
+        }
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-234197699-10"></script>
     <script>

@@ -19,6 +19,13 @@ button {
   font-family: inherit;
 }
 
+.title {
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
 .hero .hero-text {
   width: 100%;
 }
@@ -29,7 +36,7 @@ button {
 
 .hero-text .token {
   width: 50% !important;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .hero .grid {
@@ -142,6 +149,10 @@ button {
   width: 100%;
   position: relative;
   z-index: 1;
+}
+
+.mb-chart {
+  display: none;
 }
 
 .table {
@@ -428,14 +439,64 @@ body {
   gap: 5px;
 }
 
-.offer-2 {
-  display: none;
+.bonus {
+  background: transparent;
+  border: 2px solid #6CB47B;
+  box-shadow: 0px 20px 40px 0px #00000040;
+  padding-left: 15rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.bonus h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+}
+
+.bonus-offer {
+  width: 30% !important;
+  position: absolute;
+  left: -10vw;
+  top: 0;
+}
+
+.coin-sm, .coin-lg {
+  width: 5% !important;
+  position: absolute;
+}
+
+.coin-lg {
+  top: -3vh;
+  right: -2vw;
+}
+
+.coin-sm {
+  bottom: -3vh;
+  right: 10vw;
+}
+
+.token-container .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
   .countdown .time {
     padding: 0.5rem 1rem;
   }
+}
+
+@media (max-width: 1100px) {
+ .bonus {
+  padding-left: 10rem;
+ }
 }
 
 @media (max-width: 1000px) {
@@ -450,6 +511,22 @@ body {
 
   .colon {
     width: 10px;
+  }
+
+  .bonus {
+    padding-left: 6rem;
+  }
+
+  .bonus h1 {
+    font-size: 20px;
+  }
+
+  .coin-sm {
+    bottom: -2vh;
+  }
+
+  .coin-lg {
+    top: -1vh;
   }
 }
 
@@ -553,6 +630,10 @@ body {
   .presale .title {
     font-size: 24px;
   }
+
+  .coin-lg, .coin-sm {
+    width: 10% !important;
+  }
 }
 
 @media (max-width: 600px) {
@@ -577,9 +658,17 @@ body {
     width: 70% !important;
     margin: 0 auto;
   }
+
+  .bonus-offer {
+    top: -4vh;
+    left: -8vw;
+  }
 }
 
 @media (max-width: 500px) {
+  .tokenomics {
+    background-image: url('');
+  }
   .time h1 {
     font-size: 25px;
   }
@@ -598,6 +687,23 @@ body {
 
   .hero-cta .btn {
     width: 140px;
+  }
+
+  .dk-chart {
+    display: none;
+  }
+
+  .mb-chart {
+    display: block;
+  }
+
+  .bonus h1 {
+    font-size: 16px;
+  }
+
+  .bonus-offer {
+    top: -2vh;
+    left: -5vw;
   }
 }
 
@@ -620,6 +726,19 @@ body {
 
   .offer-2 {
     width: 100% !important;
+  }
+
+  .bonus {
+    padding-left: 3rem;
+  }
+
+  .bonus h1 {
+    font-size: 13px;
+  }
+
+  .bonus-offer {
+    top: -3vh;
+    left: -5vw;
   }
 }
 
